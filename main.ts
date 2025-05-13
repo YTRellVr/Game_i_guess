@@ -5,14 +5,15 @@ forever(function() {
 })
 
 // Sprite Set Up
-
+let Computer = sprites.create(assets.image`Computer World select`, SpriteKind.Food)
+Computer.setScale(1.3, ScaleAnchor.Middle)
+Computer.setPosition(21, 67)
 
 let Player = sprites.create(assets.image`Player`, SpriteKind.Player)
 Player.setStayInScreen(true)
 Player.setScale(1.5, ScaleAnchor.Middle)
-let Hitbox_Up = sprites.create(assets.image`Hitbox up start`, SpriteKind.Food)
-Hitbox_Up.setScale(1.5, ScaleAnchor.Middle)
-Hitbox_Up.setPosition(71, 7)
+characterAnimations.setCharacterAnimationsEnabled(Player, true)
+
 
 //next area code
     
@@ -23,12 +24,12 @@ Hitbox_Up.setPosition(71, 7)
 
 // Movement Set Up
 
-characterAnimations.loopFrames(Player, [], 500, characterAnimations.rule(Predicate.NotMoving))
 controller.moveSprite(Player)
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-
+    characterAnimations.runFrames(Player, [], 500, characterAnimations.rule(Predicate.NotMoving))
   
+    animation.runImageAnimation(Player, [], 500, false)
+    animation.attachAnimation(Player, null)
     
-animation.runImageAnimation(Player, [], 500, false)
 
 })

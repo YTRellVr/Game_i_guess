@@ -22,44 +22,6 @@ namespace myImages {
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `;
-            case "image3":
-            case "right2":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . f f f f f f . . . . . 
-. . . f f e e e e f 2 f . . . . 
-. . f f e e e e f 2 2 2 f . . . 
-. . f e e e f f e e e e f . . . 
-. . f f f f e e 2 2 2 2 e f . . 
-. . f e 2 2 2 f f f f e 2 f . . 
-. f f f f f f f e e e f f f . . 
-. f f e 4 4 e b f 4 4 e e f . . 
-. f e e 4 d 4 1 f d d e f . . . 
-. . f e e e e e d d d f . . . . 
-. . . . f 4 d d e 4 e f . . . . 
-. . . . f e d d e 2 2 f . . . . 
-. . . f f f e e f 5 5 f f . . . 
-. . . f f f f f f f f f f . . . 
-. . . . f f . . . f f f . . . . 
-`;
-            case "image4":
-            case "right1":return img`
-. . . . . . f f f f f f . . . . 
-. . . . f f e e e e f 2 f . . . 
-. . . f f e e e e f 2 2 2 f . . 
-. . . f e e e f f e e e e f . . 
-. . . f f f f e e 2 2 2 2 e f . 
-. . . f e 2 2 2 f f f f e 2 f . 
-. . f f f f f f f e e e f f f . 
-. . f f e 4 4 e b f 4 4 e e f . 
-. . f e e 4 d 4 1 f d d e f . . 
-. . . f e e e 4 d d d d f . . . 
-. . . . f f e e 4 4 4 e f . . . 
-. . . . . 4 d d e 2 2 2 f . . . 
-. . . . . e d d e 2 2 2 f . . . 
-. . . . . f e e f 4 5 5 f . . . 
-. . . . . . f f f f f f . . . . 
-. . . . . . . f f f . . . . . . 
-`;
             case "image2":
             case "PathWayStart":return img`
 7777777777777777777777777777777777777777777777777777744444444444444444444444444444444444477777777777777777777777777777777777777777777777777777777777777777777777
@@ -184,16 +146,39 @@ namespace myImages {
 7777777777777777777777777777777777777777777777777777744444444444444444444444444444444444477777777777777777777777777777777777777777777777777777777777777777777777
 `;
             case "image5":
-            case "Hitbox up start":return img`
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
-f f f f f f f f f f f f f f f f f f f f f f f f f 
+            case "Computer World select":return img`
+dddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff7ff77ff7f77f7ff7f777ff777fdd
+ddff7ff77ff7f77ff7f7f7f7ff7fffdd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff7f77fffff77f77f7f7f777f7ffdd
+ddff7f7ff77fffff7ff7f7f7fff7ffdd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff77f777f77ff777f777f77f7fffdd
+ddff77fff777fff77fffff77ff77ffdd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff7ff77ff7f77f7ff7f777ff777fdd
+ddff7ff77ff7f77ff7f7f7f7ff7fffdd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff7f77fffff77f77f7f7f777f7ffdd
+ddff7f7ff77fffff7ff7f7f7fff7ffdd
+ddffffffffffffffffffffffffffffdd
+ddffffffffffffffffffffffffffffdd
+ddff77f777f77ff777f777f77f7fffdd
+ddff77fff777fff77fffff77ff77ffdd
+ddffffffffffffffffffffffffffffdd
+ddff7ff77ff7f77f7ff7f777ff777fdd
+ddff7ff77ff7f77ff7f7f7f7ff7fffdd
+ddffffffffffffffffffffffffffffdd
+dddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddd
 `;
         }
         return null;
