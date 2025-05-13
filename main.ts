@@ -31,18 +31,41 @@ controller.moveSprite(Player)
 controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function() {
     
     Player.setImage(assets.image`MoveRight1`)
-    pause(500)
+    pause(300)
     Player.setImage(assets.image`MoveRight2`)
-    pause(500)
+    pause(300)
    
 
     controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Released, function () {
 
         Player.setImage(assets.image`MoveRight1`)
+        pause(600)
+        Player.setImage(assets.image`MoveRight1`)
+
+
+    })
+
+})
+
+controller.player1.onButtonEvent(ControllerButton.Down, ControllerButtonEvent.Pressed, function () {
+while (true) {
+    
+}
+    Player.setImage(assets.image`PlayerFront`)
+    pause(300)
+    Player.setImage(assets.image`MoveDown2`)
+    pause(300)
+
+
+    controller.player1.onButtonEvent(ControllerButton.Down, ControllerButtonEvent.Released, function () {
+
+        Player.setImage(assets.image`PlayerFront`)
 
 
 
     })
 
 })
+
+
 
