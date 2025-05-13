@@ -1,7 +1,6 @@
 // SetUp
 scene.setBackgroundImage(assets.image`PathWayStart`)
 forever(function() {
-    console.log(null)
 
 })
 
@@ -17,15 +16,14 @@ Hitbox_Up.setPosition(71, 7)
 
 //next area code
     
-if (true) {
-        
-    Player.overlapsWith(Hitbox_Up)
 
-    }
+    
+
+
 
 // Movement Set Up
 
-
+characterAnimations.loopFrames(Player, [], 500, characterAnimations.rule(Predicate.NotMoving))
 controller.moveSprite(Player)
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 
